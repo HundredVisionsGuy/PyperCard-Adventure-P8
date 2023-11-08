@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.13.0.min.css" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <py-config src="./pyscript.toml"></py-config>
@@ -27,6 +27,8 @@
                             <p>Keep the Pypercard a <code>&lt;template id="card#"&gt;</code> or it breaks.</p>
                             <p>For example, try changing the <code>&lt;template id="card#"&gt;</code> to <code>&lt;div id="card#"&gt;</code>, and it will trigger a <code>RuntimeError: Unable to find template for card 'card1'.</code></p>
                             <p>Just be sure to change it back.</p>
+                            <button id="go_2" autofocus>To Card 2</button>
+                            <button id="go_3" autofocus>To Card 3</button>
                         </div>
                     </div>
                 </template>
@@ -41,6 +43,7 @@
                             <p>But if you click the button, you'll transition back to the
                             first card, and the automatic transition won't happen.</p>
                             <button id="reset" autofocus>Reset</button>
+                            <button id="go_forward">Go to Next Card</button>
                         </div>
                     </div>
                 </template>
